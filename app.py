@@ -5,7 +5,7 @@ import pickle
 app = Flask(__name__,template_folder="template")
 
 def ValuePredictor(to_predict_list):
-    loaded_model = pickle.load(open("home/rohit/Desktop/ALL_Projects/LC50 project/LC50_model.pkl", "rb"))
+    loaded_model = pickle.load(open("/home/rohit/Desktop/ALL_Projects/LC50 project/LC50_model.pkl", "rb"))
     result = loaded_model.predict(to_predict_list)
     return result
      
