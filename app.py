@@ -1,8 +1,11 @@
 from flask import Flask,render_template,request
 import numpy as np
 import pickle
+import os
 
-app = Flask(__name__,template_folder="template")
+cwd = os.getcwd()
+
+app = Flask(__name__,template_folder=os.path.join(cwd,"template"))
 
 def ValuePredictor(to_predict_list):
     loaded_model = pickle.load(open("/home/rohit/Desktop/ALL_Projects/LC50 project/LC50_model.pkl", "rb"))
