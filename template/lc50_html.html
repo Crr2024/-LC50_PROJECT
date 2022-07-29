@@ -1,0 +1,38 @@
+<html>
+<body>
+    <h3>LC50 PREDICTION</h3>
+<div>
+  <form action="/result" method="POST">
+    <label for="CIC0">CIC0</label>
+    <input type="text" id="CIC0" name="CIC0">
+    <br>
+    <label for="SM1_Dz(Z)">SM1_Dz(Z)</label>
+    <input type="text" id="SM1_Dz(Z)" name="SM1_Dz(Z)">
+    <br>
+    <label for="GATS1i">GATS1i</label>
+    <input type="text" id="GATS1i" name="GATS1i">
+    <br>
+    <label for="NdsCH">NdsCH</label>
+    <input type="text" id="NdsCH" name="NdsCH">
+    <br>
+    <label for="NdssC">NdssC</label>
+    <input type="text" id="NdssC" name="NdssC">
+    <br>
+    <label for="MLOGP">MLOGP</label>
+    <input type="text" id="MLOGP" name="MLOGP">
+    <br>
+    <input type="submit" value="Submit" >
+  </form>
+</div>
+
+<p>or</p>
+<div>       
+  <form action = '/result' method="post" enctype="multipart/form-data">
+    <input type="file" ID="fileSelect" accept=".xlsx, .xls, .csv" name="File"/>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
+                                              
+                                                                                                                                                                       
